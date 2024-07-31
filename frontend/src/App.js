@@ -4,7 +4,7 @@ const App= () => {
   const [ message, setMessage ] = useState('Start')
   
   const handleButtonClick = async () => {
-    const response = await fetch('http://localhost:3001/api');
+    const response = await fetch('/api');
     const json = await response.json();
     const newMessage = json.message;
     console.log(newMessage)
