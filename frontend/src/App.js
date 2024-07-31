@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const App = () => {
+const App= () => {
   const [ message, setMessage ] = useState('Start')
   
   const handleButtonClick = async () => {
-    const response = await fetch('http://localhost:3001');
+    const response = await fetch('http://localhost:3001/api');
     const json = await response.json();
     const newMessage = json.message;
     console.log(newMessage)
