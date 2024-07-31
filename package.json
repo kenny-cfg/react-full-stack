@@ -1,0 +1,12 @@
+{
+  "name": "react-full-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./backend/static && mkdir ./backend/static && cd frontend && npm run build && cp -R build/* ../backend/static/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
