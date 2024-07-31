@@ -9,7 +9,6 @@ const App= () => {
     const response = await fetch('/api');
     const json = await response.json();
     const newMessage = json.message;
-    console.log(newMessage)
     setMessage(newMessage)
   }
 
@@ -17,7 +16,9 @@ const App= () => {
     <div>
       <Title/>
       <MessageDetails message={message}/>
-      <button onClick={handleButtonClick}>Click me</button>
+      <button style={{
+        backgroundColor: 'red'
+      }} onClick={handleButtonClick}>Click me</button>
     </div>
   );
 }
